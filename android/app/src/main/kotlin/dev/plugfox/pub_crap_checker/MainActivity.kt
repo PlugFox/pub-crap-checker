@@ -1,4 +1,4 @@
-package dev.plugfox.pub_crap_checker
+package dev.plugfox.pub_checker
 
 import io.flutter.embedding.android.FlutterActivity
 

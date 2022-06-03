@@ -31,8 +31,8 @@ analyzer:
     empty_catches: warning
 
     # Error
-    always_use_package_imports: error
     avoid_relative_lib_imports: error
+    prefer_relative_imports: error
     avoid_slow_async_io: error
     avoid_types_as_parameter_names: error
     cancel_subscriptions: error
@@ -45,6 +45,11 @@ linter:
     # Public packages
     public_member_api_docs: false
     lines_longer_than_80_chars: false
+
+    # Imports
+    prefer_relative_imports: true
+    always_use_package_imports: false
+    avoid_relative_lib_imports: true
 
     # Flutter
     use_full_hex_values_for_flutter_colors: false
@@ -69,14 +74,12 @@ linter:
     sort_pub_dependencies: false
     do_not_use_environment: false
     diagnostic_describe_all_properties: false
-    prefer_relative_imports: false
     depend_on_referenced_packages: false
     library_private_types_in_public_api: false
     prefer_final_parameters: false
     avoid_types_on_closure_parameters: false
 
     # Enabled
-    always_use_package_imports: true
     use_named_constants: true
     use_is_even_rather_than_modulo: true
     unnecessary_await_in_return: true
@@ -123,7 +126,6 @@ linter:
     prefer_const_constructors_in_immutables: true
     prefer_const_declarations: true
     prefer_const_literals_to_create_immutables: true
-    prefer_constructors_over_static_methods: true
     prefer_expression_function_bodies: true
     prefer_final_in_for_each: true
     prefer_final_locals: true
@@ -157,7 +159,6 @@ linter:
     avoid_empty_else: true
     avoid_init_to_null: true
     avoid_null_checks_in_equality_operators: true
-    avoid_relative_lib_imports: true
     avoid_return_types_on_setters: true
     avoid_shadowing_type_parameters: true
     avoid_types_as_parameter_names: true
