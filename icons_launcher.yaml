@@ -2,9 +2,9 @@
 # flutter pub run icons_launcher:main
 flutter_icons:
   #image_path: 'assets/icon/1x/icon.png'
-  image_path_android: 'assets/icon/1x/icon.png' # "assets/icon/icon-1024x1024.png"
-  image_path_ios: 'assets/icon/1x/icon.png' # "assets/icon/icon-1024x1024.png"
-  image_path_web: 'assets/icon/1x/icon.png' # "assets/icon/icon-1024x1024.png"
+  image_path_android: 'assets/icons/dart-1024x1024.png' # "assets/icon/icon-1024x1024.png"
+  image_path_ios: 'assets/icons/dart-1024x1024.png' # "assets/icon/icon-1024x1024.png"
+  image_path_web: 'assets/icons/dart-1024x1024.png' # "assets/icon/icon-1024x1024.png"
   #image_path_macos: 'assets/icon/icon-710x599.png'
   #image_path_windows: 'assets/icon/icon-710x599.png'
   #image_path_linux: 'assets/icon/icon-710x599.png'

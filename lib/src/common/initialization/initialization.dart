@@ -7,6 +7,9 @@ import 'package:stream_bloc/stream_bloc.dart';
 import '../bloc/app_bloc_observer.dart';
 import '../constant/deployment_environment.dart';
 import 'initialization.config.dart';
+import 'initialization_js.dart'
+    // ignore: uri_does_not_exist
+    if (dart.library.io) 'initialization_io.dart';
 
 @InjectableInit(
   asExtension: true,
@@ -44,6 +47,7 @@ Future<void> initializeApp({
       // Closes splash screen, and show the app layout.
       binding.allowFirstFrame();
       //final context = binding.renderViewElement;
+      platformAfterInitialization();
     });
   }
 }

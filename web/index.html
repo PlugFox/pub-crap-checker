@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<html style="height: 600px; width: 350px">
+<html style="height: 350px; width: 650px">
   <head>
     <base href="$FLUTTER_BASE_HREF">
 
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-    <meta name="description" content="Pub Crap Checker">
-
-    <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="pub_crap_checker">
-    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <meta name="description" content="Pub Checker">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png"/>
@@ -49,8 +43,16 @@
     -->
     
     <link rel="manifest" href="manifest.json">
+    <script src="splash/splash.js"></script>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="splash/style.css">
   </head>
   <body>
+    <picture id="splash">
+      <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light)">
+      <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
+      <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt=""/>
+    </picture>
     <script src="main.dart.js" type="application/javascript"></script>
   </body>
 </html>

@@ -14,3 +14,6 @@ fix: format
 format:
 	@dart fix --apply .
 	@dart format -l 120 --fix .
+
+copy-backgroud:
+	@cp web/background.js build/web/background.js
