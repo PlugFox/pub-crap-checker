@@ -1,6 +1,3 @@
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
@@ -9,7 +6,6 @@ import 'package:stream_bloc/stream_bloc.dart';
 
 import '../bloc/app_bloc_observer.dart';
 import '../constant/deployment_environment.dart';
-import '../constant/firebase_options.g.dart';
 import 'initialization.config.dart';
 
 @InjectableInit(
@@ -28,11 +24,10 @@ Future<void> initializeApp({
   try {
     l.d('_initializeApp');
     binding = WidgetsFlutterBinding.ensureInitialized()..deferFirstFrame();
-    final result = container ?? GetIt.instance;
-    await _firebaseInitilization(result);
-    result.$initGetIt(
+    final result = (container ?? GetIt.instance).$initGetIt(
       environment: environment ?? DeploymentEnvironment.current,
     );
+    //await _firebaseInitilization(result);
     await result.allReady(timeout: const Duration(seconds: 15));
     StreamBlocObserver.config = StreamBlocObserverConfig(
       observer: result<AppBlocObserver>(),
@@ -53,6 +48,7 @@ Future<void> initializeApp({
   }
 }
 
+/*
 Future<void> _firebaseInitilization(GetIt container) async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -64,3 +60,4 @@ Future<void> _firebaseInitilization(GetIt container) async {
     ..registerSingleton<FirebaseAnalytics>(analytics);
   await analytics.logAppOpen();
 }
+*/

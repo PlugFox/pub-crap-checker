@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "168270398237",
+    "project_id": "pub-checker",
+    "storage_bucket": "pub-checker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168270398237:android:9bcbcd4670d755d4eb17f4",
+        "android_client_info": {
+          "package_name": "dev.plugfox.pub_checker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168270398237-1adas6hvvpmaesgji4sm2t877ck6neh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.plugfox.pub_checker",
+            "certificate_hash": "092e8891f361bc0f0af4ca34e8f627a85ec6c748"
+          }
+        },
+        {
+          "client_id": "168270398237-fsbghaavoom5aevljg815lged6c6qog0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7sRqP3Q8jXIUYBF5pMiVcVLav-qu2YTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168270398237-fsbghaavoom5aevljg815lged6c6qog0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "168270398237-v7u7437p4toncb8qonf2br9mo1j211i2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dev.plugfox.pubChecker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

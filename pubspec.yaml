@@ -34,12 +34,15 @@ dependencies:
   platform_info: ^3.2.0
 
   # Firebase
-  firebase: ^9.0.2
-  firebase_core: ^1.16.0
-  firebase_analytics: ^9.1.7
-  firebase_auth: ^3.3.17
-  cloud_firestore: ^3.1.14
-  flutterfire_ui: ^0.4.0+5
+  #firebase: ^9.0.2
+  #firebase_core: ^1.16.0
+  #firebase_analytics: ^9.1.7
+  #firebase_auth: ^3.3.17
+  #firebase_remote_config: ^2.0.8
+  #cloud_firestore: ^3.1.14
+  #firebase_storage: ^10.2.17
+  #firebase_performance: ^0.8.0+13
+  #flutterfire_ui: ^0.4.0+5
 
   # Inversion of control
   get_it: ^7.2.0

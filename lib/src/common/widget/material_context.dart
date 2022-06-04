@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import '../router/router.dart';
+import '../../feature/dashboard/widget/dashboard_screen.dart';
 
 /// {@template material_context}
 /// MaterialContext widget
@@ -13,10 +13,30 @@ class MaterialContext extends StatelessWidget {
   });
 
   @override
+  Widget build(BuildContext context) => MaterialApp(
+        title: 'Pub Checker',
+        restorationScopeId: 'app',
+        home: const DashboardScreen(),
+        theme: ThemeData.light(),
+        localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
+          //AppLocalization.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: const <Locale>[
+          Locale('en', 'US'),
+        ],
+        locale: const Locale('en', 'US'),
+        //scaffoldMessengerKey: GetIt.instance<GlobalKey<ScaffoldMessengerState>>(),
+      );
+
+  /*
+  @override
   Widget build(BuildContext context) => MaterialApp.router(
         routeInformationParser: AppRouter.instance().routeInformationParser,
         routerDelegate: AppRouter.instance().routerDelegate,
-        title: 'Packages',
+        title: 'Pub Checker',
         restorationScopeId: 'app',
         theme: ThemeData.light(),
         localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
@@ -29,4 +49,5 @@ class MaterialContext extends StatelessWidget {
         locale: const Locale('en', 'US'),
         //scaffoldMessengerKey: GetIt.instance<GlobalKey<ScaffoldMessengerState>>(),
       );
+  */
 } // MaterialContext

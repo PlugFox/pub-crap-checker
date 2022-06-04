@@ -1,58 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+<html style="height: 600px; width: 350px">
+  <head>
+    <base href="$FLUTTER_BASE_HREF">
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="Pub Crap Checker">
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="pub_crap_checker">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Pub Crap Checker">
+    <title>Pub Checker</title>
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="pub_crap_checker">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!--<script src="scripts/firebase-app.js"></script>-->
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+    <!-- Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!--<script src="scripts/firebase-analytics.js"></script>-->
+    <!--<script src="scripts/firebase-auth.js"></script>-->
+    <!--<script src="scripts/firebase-remote-config.js"></script>-->
+    <!--<script src="scripts/firebase-performance.js"></script>-->
+    <!--<script src="scripts/firebase-firestore.js"></script>-->
+    <!--<script src="scripts/firebase-database.js"></script>-->
+    <!--<script src="scripts/firebase-storage.js"></script>-->
+    <!--<script src="scripts/firebase-messaging.js"></script>-->
+    <!--<script src="scripts/firebase-functions.js"></script>-->
 
-  <title>pub_crap_checker</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
-</head>
-<body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      }).then(function(engineInitializer) {
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        return appRunner.runApp();
-      });
-    });
-  </script>
-</body>
+    <!--
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyC0s7F3LYdn8NfSlqX6xrrwag97bCtDnVY",
+        authDomain: "pub-checker.firebaseapp.com",
+        projectId: "pub-checker",
+        storageBucket: "pub-checker.appspot.com",
+        messagingSenderId: "168270398237",
+        appId: "1:168270398237:web:37dff0d7312aa968eb17f4",
+        measurementId: "G-D84MMXWZCX"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    -->
+    
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
 </html>
